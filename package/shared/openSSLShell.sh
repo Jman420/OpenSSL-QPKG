@@ -8,7 +8,6 @@
   QPKG_SETTINGS="/etc/config/qpkg.conf"
   
   LINK_PATH="/Apps/OpenSSL"
-  APP_PATH="/app"
   INSTALL_PATH=""
   
   function log_info() {
@@ -40,7 +39,7 @@
   }
   
   function create_links() {
-    ln -nfs $INSTALL_PATH/$APP_PATH $LINK_PATH
+    ln -nfs $INSTALL_PATH $LINK_PATH
   }
   
   function destory_links() {
