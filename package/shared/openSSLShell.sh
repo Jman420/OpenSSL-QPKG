@@ -7,10 +7,8 @@
   LOG_MSG_PREFIX="[App Center]"
   QPKG_SETTINGS="/etc/config/qpkg.conf"
   
-  LINK_PATH="/Apps"
-  LINK_BIN_PATH="$LINK_PATH/bin"
+  LINK_PATH="/Apps/OpenSSL"
   APP_PATH="/app"
-  APP_BIN_PATH="$APP_PATH/bin"
   INSTALL_PATH=""
   
   function log_info() {
@@ -42,15 +40,11 @@
   }
   
   function create_links() {
-    ln -nfs $INSTALL_PATH/$APP_PATH $LINK_PATH/OpenSSL
-    ln -nfs $INSTALL_PATH/$APP_BIN_PATH/c_rehash $LINK_BIN_PATH/c_rehash
-	ln -nfs $INSTALL_PATH/$APP_BIN_PATH/openssl $LINK_BIN_PATH/openssl
+    ln -nfs $INSTALL_PATH/$APP_PATH $LINK_PATH
   }
   
   function destory_links() {
-    rm -f $LINK_PATH/OpenSSL
-    rm -f $LINK_BIN_PATH/c_rehash
-	rm -f $LINK_BIN_PATH/openssl
+    rm -f $LINK_PATH
   }
   
   case "$1" in

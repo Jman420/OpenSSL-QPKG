@@ -6,7 +6,7 @@
 
 my $openssl;
 
-my $dir = "/Apps/OpenSSL";
+my $dir = "/Apps/OpenSSL/config";
 my $prefix = "/app";
 
 if(defined $ENV{OPENSSL}) {
