@@ -2,8 +2,6 @@ package/arm-x09/
 package/arm-x19/
 package/build/
 package/config/
-package/icons/
-package/shared/
-package/x86/
+# package/x86/
 package/x86_64/
 *.qpkg
