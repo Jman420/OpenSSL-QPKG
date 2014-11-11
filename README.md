@@ -21,6 +21,7 @@ INSTRUCTIONS
 
 This script makes the following assumptions:
   - Your file system is setup as follows:
+  
     [Root Folder]
 	  - BuildEnvironments
 	    - x86
