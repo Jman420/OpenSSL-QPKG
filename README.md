@@ -22,7 +22,7 @@ INSTRUCTIONS
 This script makes the following assumptions:
   - Your file system is setup as follows:
   
-    [Root Folder]
+    - [Root Folder]
 	  - BuildEnvironments
 	    - x86
 		  - sys-root
