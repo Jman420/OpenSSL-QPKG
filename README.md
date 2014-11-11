@@ -21,13 +21,13 @@ INSTRUCTIONS
 
 This script makes the following assumptions:
   - Your file system is setup as follows:
-    <Root Folder>
+    [Root Folder]
 	  - BuildEnvironments
 	    - x86
 		  - sys-root
-		    - <Contents of sys-root folder from QNAP Toolchain>
-	  - <OpenSSL Package Folder>
-	    - <Contents of the git repository>
+		    - [Contents of sys-root folder from QNAP Toolchain]
+	  - [OpenSSL Package Folder]
+	    - [Contents of the git repository]
 		
 The script performs the following steps:
   1. Clean any Existing Source Code & Installed Binaries
