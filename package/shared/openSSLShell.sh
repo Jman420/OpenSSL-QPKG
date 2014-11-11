@@ -12,11 +12,12 @@
   
   function log_info() {
     $LOGTOOL_CMD -t0 -uSystem -p127.0.0.1 -mlocalhost -a "$LOG_MSG_PREFIX $1"
+	echo "$1"
   }
   
   function err_log() {
     $LOGTOOL_CMD -t2 -uSystem -p127.0.0.1 -mlocalhost -a "$LOG_MSG_PREFIX $1"
-    echo  "$1" 1>&2
+    echo "$1" 1>&2
     exit 1
   }
   
@@ -62,14 +63,12 @@
 	  set_path_variable
 	  create_links
 	  
-	  echo "QNAP OpenSSL replaced with Standard OpenSSL."
 	  log_info "QNAP OpenSSL replaced with Standard OpenSSL."
     ;;
     
     stop)
 	  echo "Destroying Standard OpenSSL Symlinks"
       destory_links
-	  echo "Standard OpenSSL replaced with QNAP OpenSSL."
 	  log_info "Standard OpenSSL replaced with QNAP OpenSSL."
     ;;
 	
